@@ -1,0 +1,94 @@
+:root {
+    --font-color: white; 
+    --body-color: #dbeafe;
+    --header-color: #60a5fa;
+    --border-color: #1e3a8a;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display:  grid;
+    background-color: var(--body-color);
+}
+
+
+.headerTitle {
+    display: flex;
+    box-shadow: 0px 2px 5px lightslategray;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 60px;
+    border-bottom: 2px solid var(--border-color);
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
+
+.upperSection {
+    display: flex;
+    font-size: 35px;
+    color: var(--border-color);
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.turnDisplay {
+    min-width: 200px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+}
+
+.cell:hover {
+    background-color: aliceblue;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--border-color);
+    
+
+}
+
+.newGame {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.restart:hover {
+    background-color: #4a81c4;
+}
+
+button, .restart {
+    background-color: var(--header-color);
+    color: var(--font-color);
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
